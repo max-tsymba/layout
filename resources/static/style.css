@@ -1,0 +1,289 @@
+/* ## RESET ## */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ## BASICS ## */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fefefe;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ## SIGN UP/IN PAGE ## */
+.signup {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__template {
+  width: 448px;
+  max-width: 100%;
+  background-color: #fefefe;
+  border-radius: 4px;
+  box-shadow: rgb(60 66 87 / 12%) 0px 7px 14px 0px,
+    rgb(0 0 0 / 12%) 0px 3px 6px 0px;
+  padding: 40px;
+  color: #5469d4;
+}
+
+.form__title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.field__label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+}
+
+.field {
+  padding-bottom: 10px !important;
+}
+
+.field input::placeholder {
+  font-size: 14px !important;
+}
+
+.form__button {
+  background-color: #5469d4 !important;
+  color: #fefefe !important;
+  width: 100% !important;
+  margin-top: 14px !important;
+}
+
+.support__text a {
+  color: #5469d4 !important;
+}
+
+.support__text {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* ## HOME PAGE ## */
+.header {
+  padding: 20px 0;
+  box-shadow: rgb(60 66 87 / 12%) 0px 7px 14px 0px,
+    rgb(0 0 0 / 12%) 0px 3px 6px 0px;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  background-color: #fefefe;
+}
+
+.delete {
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-left: 10px;
+}
+
+.main {
+  margin-top: 120px;
+}
+
+.field__project {
+  width: 40%;
+}
+
+.field__timer {
+  width: 25%;
+}
+
+.field__minutes {
+  width: 25%;
+}
+
+.form__flex {
+  display: flex;
+  gap: 40px;
+}
+
+.custom-fields {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.field__button {
+  width: 10% !important;
+  margin-top: 0 !important;
+}
+
+.blue {
+  border-top: 0.2em solid #5469d4 !important;
+}
+
+.table {
+  margin: 0 auto !important;
+}
+
+.table > thead > tr > th:nth-child(1) {
+  width: 80% !important;
+}
+
+.project__title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.project__time {
+  font-size: 14px;
+}
+
+.project__time span {
+  color: #5469d4;
+  font-weight: 500;
+}
+
+.project__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.project-table {
+  margin-bottom: 50px;
+}
