@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clockify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <!-- Add Form -->
+          <form class="ui form form__flex">
+            <div class="field field__project custom-fields">
+              <input type="email" placeholder="Назва проекту?" />
+            </div>
+            <div class="field field__timer custom-fields">
+              <input type="email" placeholder="Дата" />
+            </div>
+            <div class="field field__minutes custom-fields">
+              <input type="email" placeholder="Хвилини" />
+            </div>
+            <button class="ui button form__button field__button" type="submit">
+              Додати
+            </button>
+            <button class="delete">
+              <i class="sign out alternate icon"></i>
+            </button>
+          </form>
+          <!-- End Add Form -->
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__inner">
+          <!-- Project Table -->
+          <div class="project-table">
+            <div class="project__head">
+              <div class="project__title">Проект 1</div>
+              <div class="project__time">
+                Загальний час: <span>115 хвилин</span>
+                <button class="delete">
+                  <i class="trash alternate icon"></i>
+                </button>
+              </div>
+            </div>
+            <table class="ui blue table">
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Час</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>23 Січня 2022</td>
+                  <td>40 хвилин</td>
+                </tr>
+                <tr>
+                  <td>24 Січня 2022</td>
+                  <td>75 хвилин</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- End Project Table -->
+
+          <!-- Project Table -->
+          <div class="project-table">
+            <div class="project__head">
+              <div class="project__title">Проект 2</div>
+              <div class="project__time">
+                Загальний час: <span>220 хвилин</span>
+                <button class="delete">
+                  <i class="trash alternate icon"></i>
+                </button>
+              </div>
+            </div>
+            <table class="ui blue table">
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Час</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>27 Січня 2022</td>
+                  <td>30 хвилин</td>
+                </tr>
+                <tr>
+                  <td>28 Січня 2022</td>
+                  <td>120 хвилин</td>
+                </tr>
+                <tr>
+                  <td>29 Січня 2022</td>
+                  <td>70 хвилин</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- End Project Table -->
+        </div>
+      </div>
+    </main>
+    <!-- 
+    <footer>
+      <div class="container">footer</div>
+    </footer> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
